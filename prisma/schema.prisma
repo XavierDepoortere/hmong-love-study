@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Enums pour le questionnaire
+enum Sexe {
+  HOMME
+  FEMME
+  AUTRE
+}
+
+enum Q1Usage {
+  REGULIEREMENT
+  PARFOIS
+  RAREMENT
+  JAMAIS
+}
+
+enum Q2Interet {
+  OUI
+  NON
+  PEUT_ETRE
+}
+
+enum Q4Culture {
+  TRES_IMPORTANTE
+  ASSEZ_IMPORTANTE
+  PEU
+  PAS_DU_TOUT
+}
+
+enum Q9Style {
+  MODERNE_FUN
+  TRADITIONNEL_ELEGANT
+  LES_DEUX
+}
+
+enum Q10Accroche {
+  SERIEUSE
+  FUN
+  CULTURELLE
+  ROMANTIQUE
+}
+
+// Modèle principal pour les réponses
+model Response {
+  id                  String      @id @default(uuid())
+  ipHash              String
+  sexe                Sexe
+  age                 Int
+  ville               String?
+  q1_usage            Q1Usage
+  q2_interet          Q2Interet
+  q3_pourquoi         String?     @db.Text
+  q4_culture          Q4Culture
+  q5_culture_features String[]
+  q6_features         String[]
+  q7_fuir             String?     @db.Text
+  q8_rester           String?     @db.Text
+  q9_style            Q9Style
+  q10_accroche        Q10Accroche
+  langue              String      @default("fr")
+  createdAt           DateTime    @default(now())
+
+  @@index([ipHash])
+  @@index([createdAt])
+}

@@ -1,0 +1,170 @@
+{
+  "common": {
+    "appName": "Hmong Love",
+    "tagline": "❤",
+    "subtitle": "Étude de marché",
+    "loading": "Chargement...",
+    "submit": "Soumettre",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "required": "Requis",
+    "optional": "Optionnel",
+    "error": "Erreur",
+    "success": "Succès"
+  },
+  "home": {
+    "title": "Hmong Love — Étude de marché",
+    "subtitle": "Aidez-nous à construire une application de rencontre adaptée à la communauté Hmong.",
+    "description": "Votre participation est anonyme. Comptez 2–3 minutes. Aucune donnée nominative n'est collectée.",
+    "cta": "Commencer l'enquête",
+    "notice": "Vous pouvez répondre une seule fois. Nous enregistrons uniquement une empreinte IP (hashée)."
+  },
+  "questionnaire": {
+    "intro": "Merci de participer. Vos réponses resteront anonymes et serviront uniquement à améliorer l'application Hmong Love.",
+    "estimatedTime": "Temps estimé : 2–3 minutes",
+    "sections": {
+      "personal": "Informations personnelles",
+      "main": "Questions principales"
+    },
+    "fields": {
+      "sexe": {
+        "label": "Sexe",
+        "options": {
+          "HOMME": "Homme",
+          "FEMME": "Femme",
+          "AUTRE": "Autre"
+        }
+      },
+      "age": {
+        "label": "Âge",
+        "placeholder": "Entrez votre âge"
+      },
+      "ville": {
+        "label": "Ville",
+        "placeholder": "Votre ville (optionnel)"
+      }
+    },
+    "questions": {
+      "q1": {
+        "label": "Utilisez-vous déjà des applications/sites de rencontre ?",
+        "options": {
+          "REGULIEREMENT": "Oui régulièrement",
+          "PARFOIS": "Oui parfois",
+          "RAREMENT": "Rarement",
+          "JAMAIS": "Jamais"
+        }
+      },
+      "q2": {
+        "label": "Seriez-vous intéressé par un site de rencontre spécifiquement Hmong ?",
+        "options": {
+          "OUI": "Oui",
+          "NON": "Non",
+          "PEUT_ETRE": "Peut-être"
+        }
+      },
+      "q3": {
+        "label": "Pourquoi ?",
+        "placeholder": "Expliquez votre réponse (optionnel)..."
+      },
+      "q4": {
+        "label": "Les valeurs culturelles Hmong sont-elles importantes dans vos rencontres ?",
+        "options": {
+          "TRES_IMPORTANTE": "Très importantes",
+          "ASSEZ_IMPORTANTE": "Assez importantes",
+          "PEU": "Peu",
+          "PAS_DU_TOUT": "Pas du tout"
+        }
+      },
+      "q5": {
+        "label": "Quelles fonctionnalités culturelles aimeriez-vous ?",
+        "hint": "Plusieurs choix possibles",
+        "options": {
+          "clan": "Indicateur de clan (xeem)",
+          "langue": "Langue parlée (Hmong vert / Hmong blanc)",
+          "activites": "Activités culturelles",
+          "traditions": "Respect des traditions",
+          "autre": "Autre"
+        },
+        "autrePlaceholder": "Précisez..."
+      },
+      "q6": {
+        "label": "Quelles fonctionnalités vous semblent indispensables ?",
+        "hint": "Plusieurs choix possibles",
+        "options": {
+          "chat": "Chat en direct",
+          "appel": "Appel audio/vidéo",
+          "verification": "Vérification des profils",
+          "match": "Match par affinité",
+          "photos": "2 photos minimum par profil"
+        }
+      },
+      "q7": {
+        "label": "Qu'est-ce qui vous ferait fuir sur une plateforme comme celle-ci ?",
+        "placeholder": "Votre réponse..."
+      },
+      "q8": {
+        "label": "Qu'est-ce qui vous ferait rester longtemps sur une plateforme ?",
+        "placeholder": "Votre réponse..."
+      },
+      "q9": {
+        "label": "Quel style préférez-vous pour le site/app ?",
+        "options": {
+          "MODERNE_FUN": "Moderne et fun",
+          "TRADITIONNEL_ELEGANT": "Traditionnel mais élégant",
+          "LES_DEUX": "Les deux"
+        }
+      },
+      "q10": {
+        "label": "Préférez-vous une accroche :",
+        "options": {
+          "SERIEUSE": "Sérieuse",
+          "FUN": "Fun",
+          "CULTURELLE": "Culturelle",
+          "ROMANTIQUE": "Romantique"
+        }
+      }
+    },
+    "submit": "Soumettre mes réponses",
+    "submitting": "Envoi en cours..."
+  },
+  "thank_you": {
+    "title": "Merci !",
+    "message": "Votre participation nous aide à construire une application qui vous ressemble.",
+    "share": "Partagez cette enquête avec votre entourage",
+    "backHome": "Retour à l'accueil"
+  },
+  "errors": {
+    "already_answered": "Vous avez déjà répondu à cette enquête.",
+    "submission_failed": "Une erreur est survenue. Veuillez réessayer.",
+    "age_invalid": "L'âge doit être compris entre 13 et 120 ans.",
+    "required_fields": "Veuillez remplir tous les champs obligatoires."
+  },
+  "legal": {
+    "rgpd": "Les réponses sont anonymes. Nous stockons uniquement une empreinte d'adresse IP (hashée) afin de limiter les doubles réponses. Aucune donnée personnelle nominative n'est collectée."
+  },
+  "stats": {
+    "title": "Statistiques — Hmong Love",
+    "totalResponses": "Nombre total de réponses",
+    "charts": {
+      "sexe": "Répartition par sexe",
+      "q1": "Usage des apps de rencontre",
+      "q2": "Intérêt pour Hmong Love",
+      "q4": "Importance des valeurs culturelles",
+      "q5": "Fonctionnalités culturelles demandées",
+      "q6": "Fonctionnalités indispensables"
+    },
+    "openResponses": {
+      "title": "Réponses ouvertes",
+      "q3": "Pourquoi ?",
+      "q7": "Ce qui ferait fuir",
+      "q8": "Ce qui ferait rester"
+    },
+    "export": "Exporter CSV",
+    "login": {
+      "title": "Accès administrateur",
+      "password": "Mot de passe",
+      "submit": "Accéder",
+      "error": "Mot de passe incorrect"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "common": {
+    "appName": "Hmong Love",
+    "tagline": "❤",
+    "subtitle": "Kev tshawb fawb",
+    "loading": "Tabtom load...",
+    "submit": "Xa",
+    "next": "Tom ntej",
+    "previous": "Rov qab",
+    "required": "Yuav tsum tau",
+    "optional": "Tsis tas",
+    "error": "Yuam kev",
+    "success": "Zoo lawm"
+  },
+  "home": {
+    "title": "Hmong Love — Kev tshawb fawb",
+    "subtitle": "Pab peb tsim ib lub app nrhiav hlub rau cov Hmoob.",
+    "description": "Koj cov lus teb yog ntiag tug. Yuav siv 2-3 feeb xwb. Peb tsis khaws koj lub npe.",
+    "cta": "Pib teb lus nug",
+    "notice": "Koj teb tau ib zaug xwb. Peb khaws ib qho IP (encrypted) thiab localStorage xwb."
+  },
+  "questionnaire": {
+    "intro": "Ua tsaug koj koom nrog. Koj cov lus teb yuav pab peb ua Hmong Love zoo dua.",
+    "estimatedTime": "Sij hawm: 2-3 feeb",
+    "sections": {
+      "personal": "Koj tus kheej",
+      "main": "Cov lus nug tseem ceeb"
+    },
+    "fields": {
+      "sexe": {
+        "label": "Txiv neej/Poj niam",
+        "options": {
+          "HOMME": "Txiv neej",
+          "FEMME": "Poj niam",
+          "AUTRE": "Lwm yam"
+        }
+      },
+      "age": {
+        "label": "Hnub nyoog",
+        "placeholder": "Koj muaj pes tsawg xyoo"
+      },
+      "ville": {
+        "label": "Lub zos",
+        "placeholder": "Koj nyob qhov twg (tsis tas)"
+      }
+    },
+    "questions": {
+      "q1": {
+        "label": "Koj puas siv lwm cov app nrhiav hlub?",
+        "options": {
+          "REGULIEREMENT": "Yog, tas li",
+          "PARFOIS": "Yog, qee zaus",
+          "RAREMENT": "Tsis tshua",
+          "JAMAIS": "Tsis siv"
+        }
+      },
+      "q2": {
+        "label": "Koj puas xav siv ib lub app nrhiav hlub rau Hmoob xwb?",
+        "options": {
+          "OUI": "Xav",
+          "NON": "Tsis xav",
+          "PEUT_ETRE": "Tej zaum"
+        }
+      },
+      "q3": {
+        "label": "Vim li cas?",
+        "placeholder": "Qhia ntxiv (tsis tas)..."
+      },
+      "q4": {
+        "label": "Hmoob kev cai dab qhuas puas tseem ceeb rau koj thaum nrhiav hlub?",
+        "options": {
+          "TRES_IMPORTANTE": "Tseem ceeb heev",
+          "ASSEZ_IMPORTANTE": "Tseem ceeb me ntsis",
+          "PEU": "Tsis tshua tseem ceeb",
+          "PAS_DU_TOUT": "Tsis tseem ceeb"
+        }
+      },
+      "q5": {
+        "label": "Yam twg koj xav pom hauv app?",
+        "hint": "Xaiv ntau tau",
+        "options": {
+          "clan": "Qhia xeem",
+          "langue": "Hom lus (Hmoob Dawb / Hmoob Ntsuab)",
+          "activites": "Kev ua si Hmoob",
+          "traditions": "Kev cai dab qhuas",
+          "autre": "Lwm yam"
+        },
+        "autrePlaceholder": "Qhia ntxiv..."
+      },
+      "q6": {
+        "label": "Yam twg tseem ceeb tshaj hauv app?",
+        "hint": "Xaiv ntau tau",
+        "options": {
+          "chat": "Chat",
+          "appel": "Hu xov tooj/video",
+          "verification": "Txheeb xyuas profile",
+          "match": "Match raws siab nyiam",
+          "photos": "2 daim duab tsawg kawg"
+        }
+      },
+      "q7": {
+        "label": "Yam twg yuav ua rau koj tso app tseg?",
+        "placeholder": "Koj xav li cas..."
+      },
+      "q8": {
+        "label": "Yam twg yuav ua rau koj nyob siv app ntev?",
+        "placeholder": "Koj xav li cas..."
+      },
+      "q9": {
+        "label": "Koj nyiam app zoo li cas?",
+        "options": {
+          "MODERNE_FUN": "Tshiab thiab lom zem",
+          "TRADITIONNEL_ELEGANT": "Qub tab sis zoo nkauj",
+          "LES_DEUX": "Ob yam"
+        }
+      },
+      "q10": {
+        "label": "Koj nyiam lo lus hais li cas?",
+        "options": {
+          "SERIEUSE": "Tiag tiag",
+          "FUN": "Lom zem",
+          "CULTURELLE": "Hmoob kev cai",
+          "ROMANTIQUE": "Hlub"
+        }
+      }
+    },
+    "submit": "Xa kuv cov lus teb",
+    "submitting": "Tabtom xa..."
+  },
+  "thank_you": {
+    "title": "Ua tsaug!",
+    "message": "Koj pab peb ua ib lub app zoo rau Hmoob.",
+    "share": "Qhia rau koj cov phooj ywg",
+    "backHome": "Rov qab"
+  },
+  "errors": {
+    "already_answered": "Koj twb teb lawm.",
+    "submission_failed": "Muaj teeb meem. Thov rov sim dua.",
+    "age_invalid": "Hnub nyoog yuav tsum yog 13-120 xyoo.",
+    "required_fields": "Thov teb tag nrho cov lus nug tseem ceeb."
+  },
+  "legal": {
+    "rgpd": "Cov lus teb yog ntiag tug. Peb khaws ib qho IP (encrypted) xwb kom tsis txhob teb ob zaug. Peb tsis khaws koj lub npe."
+  },
+  "stats": {
+    "title": "Cov lej — Hmong Love",
+    "totalResponses": "Cov neeg teb",
+    "charts": {
+      "sexe": "Txiv neej/Poj niam",
+      "q1": "Siv app nrhiav hlub",
+      "q2": "Xav siv Hmong Love",
+      "q4": "Hmoob kev cai tseem ceeb",
+      "q5": "Yam Hmoob xav tau",
+      "q6": "Yam tseem ceeb"
+    },
+    "openResponses": {
+      "title": "Cov lus teb ntev",
+      "q3": "Vim li cas?",
+      "q7": "Yam ua rau tso tseg",
+      "q8": "Yam ua rau nyob ntev"
+    },
+    "export": "Export CSV",
+    "login": {
+      "title": "Admin nkag",
+      "password": "Password",
+      "submit": "Nkag",
+      "error": "Password tsis yog"
+    }
+  }
+}
