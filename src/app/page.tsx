@@ -9,7 +9,23 @@ export default function HomePage() {
   const { t } = useTranslation();
   const [alreadyAnswered, setAlreadyAnswered] = useState(false);
   const [mounted, setMounted] = useState(false);
-
+  const shareUrl = typeof window !== "undefined" ? window.location.origin : "";
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Hmong Love - Enquête",
+          text: t.home.subtitle,
+          url: shareUrl,
+        });
+      } catch (err) {
+        console.log("Partage annulé");
+      }
+    } else {
+      navigator.clipboard.writeText(shareUrl);
+      alert("Lien copié !");
+    }
+  };
   useEffect(() => {
     setMounted(true);
     const done = localStorage.getItem("hmonglove_survey_done") === "1";
@@ -104,6 +120,27 @@ export default function HomePage() {
                     {t.errors.already_answered}
                   </span>
                 </div>
+                <br />
+                <br />
+                <button
+                  onClick={handleShare}
+                  className="btn-primary inline-flex items-center gap-3"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                    />
+                  </svg>
+                  {t.thank_you.share}
+                </button>
               </div>
             ) : (
               <Link
