@@ -18,56 +18,19 @@ Application web pour collecter des réponses à une enquête destinée à la com
 - **Graphiques** : Recharts
 - **i18n** : Français / Hmong
 
-## 📁 Structure
-
-```
-hmong-love/
-├── prisma/
-│   └── schema.prisma       # Schéma de la base de données
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── submit/     # API pour soumettre les réponses
-│   │   │   └── stats/      # API pour récupérer les statistiques
-│   │   ├── questionnaire/  # Page du questionnaire
-│   │   ├── stats/          # Page admin des statistiques
-│   │   ├── thank-you/      # Page de remerciement
-│   │   ├── layout.tsx
-│   │   ├── page.tsx        # Page d'accueil
-│   │   └── globals.css
-│   ├── components/
-│   │   ├── Header.tsx
-│   │   └── LanguageSelector.tsx
-│   ├── i18n/
-│   │   ├── fr.json         # Traductions françaises
-│   │   └── hm.json         # Traductions Hmong
-│   └── lib/
-│       ├── i18n.tsx        # Context i18n
-│       ├── prisma.ts       # Client Prisma
-│       └── utils.ts        # Utilitaires
-├── .env.example
-├── package.json
-├── tailwind.config.js
-└── tsconfig.json
-```
+````
 
 ## 🚀 Installation
 
 ### 1. Cloner et installer
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/XavierDepoortere/hmong-love-study.git
 cd hmong-love
 npm install
-```
+````
 
 ### 2. Configuration
-
-Copier le fichier d'environnement et le configurer :
-
-```bash
-cp .env.example .env
-```
 
 Éditer `.env` avec vos paramètres :
 
@@ -99,12 +62,12 @@ L'application sera disponible sur `http://localhost:3000`
 
 ## 📊 Pages
 
-| Route | Description |
-|-------|-------------|
-| `/` | Page d'accueil avec CTA vers le questionnaire |
-| `/questionnaire` | Formulaire d'enquête complet |
-| `/thank-you` | Page de remerciement après soumission |
-| `/stats` | Dashboard admin (protégé par mot de passe) |
+| Route            | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `/`              | Page d'accueil avec CTA vers le questionnaire |
+| `/questionnaire` | Formulaire d'enquête complet                  |
+| `/thank-you`     | Page de remerciement après soumission         |
+| `/stats`         | Dashboard admin (protégé par mot de passe)    |
 
 ## 🔒 Sécurité anti-doublon
 
@@ -115,6 +78,7 @@ L'application sera disponible sur `http://localhost:3000`
 ## 🌐 Internationalisation
 
 L'application supporte deux langues :
+
 - **FR** : Français (par défaut)
 - **HM** : Hmong
 
@@ -123,19 +87,6 @@ Le sélecteur de langue est persisté en `localStorage`.
 ## 📈 Export des données
 
 La page `/stats` permet d'exporter toutes les réponses en CSV (anonymisé, sans IP).
-
-## 🚢 Déploiement
-
-### Avec Coolify
-
-1. Connecter votre repo GitHub à Coolify
-2. Configurer les variables d'environnement
-3. Déployer !
-
-### Variables d'environnement requises
-
-- `DATABASE_URL` : URL de connexion PostgreSQL
-- `ADMIN_PASSWORD` : Mot de passe pour accéder à `/stats`
 
 ## 📝 Licence
 
